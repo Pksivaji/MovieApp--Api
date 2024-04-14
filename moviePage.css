@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(41, 41, 41);
+    margin:  7vw 14vw;
+    font-family:cursive;
+}
+
+#movie-details-container{
+    border: 2px solid rgb(1, 1, 1);
+    display: flex;
+    width:70vw;
+    border-radius: 20px;
+    /* box-shadow: 4px 3px 5px rgb(18, 8, 8),inset 1px 1px 5px rgb(89, 83, 83); */
+    box-shadow: 0 0 10px  black;
+    
+}
+
+.movie-poster{
+    height:400px;
+    background-size: cover;
+    padding-right: 12px;
+    border-radius: 20px;
+
+}
+
+#movie-poster-img{
+    width: 40vw;
+    height:400px;
+    border-radius: 20px 0 0 20px;
+
+}
+
+#movie-title,#movie-rating,.fa-star{
+    color:white;
+
+}
+
+.fa-star{
+    color:rgb(207, 243, 5)
+} 
+.fa-x{
+    color:white;
+    font-size: 30px;
+    float:right;
+    position:relative;
+    top:-32px;
+    right:-32px;
+   
+}
+.fa-x:hover{
+    color:rgb(220, 24, 24);
+}
+.movie-rating{
+    display: flex;
+    flex-direction: row;
+}
+.overview{
+    display: flex;
+     
+}
+
+@media screen and (max-width:700px){
+    #movie-details-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
